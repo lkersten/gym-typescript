@@ -52,7 +52,7 @@ const Home = ({setSelectedPage}: Props) => {
                 <div className="relative before:content-empty 
                      before:absolute before:-top-20 before:-left-20 before:z-[1] before:w-32 
                      before:h-32 before:bg-cover before:bg-center md:before:w-48 md:before:h-48"
-                     style={{ "--tw-content": '""' } as React.CSSProperties}
+                    //  style={{ "--tw-content": '""' } as React.CSSProperties}
                      >
                 
                 {/* <img alt="evolve-text" src="/src/assets/EvolveText.png" /> */}
