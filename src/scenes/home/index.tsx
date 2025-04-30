@@ -55,9 +55,9 @@ const Home = ({setSelectedPage}: Props) => {
                      >
                 
                 <img alt="evolve-text" src="/src/assets/EvolveText.png" />
-                    {/* <div className="backgroundImage:EvolveText"> */}
-                        <img alt="home-page-text" src={HomePageText}/>
-                    {/* </div> */}
+                    <div className="backgroundImage:EvolveText">
+                    <img alt="home-page-text" src={HomePageText}/>
+                    </div>
                   
                     </div>
                 </div>
