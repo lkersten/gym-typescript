@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Background images */
+  --background-image-gradient-yellowred: linear-gradient(90deg, #FF616A 0%, #FFC837 100%);
+  --background-image-mobile-home: url(./assets/HomePageGraphic.png);
+  --background-image-evolvetext: url(./assets/EvolveText.png);
+  --background-image-abstractwaves: url(./assets/AbstractWaves.png);
+  --background-image-sparkles: url(./assets/Sparkles.png);
+  --background-image-circles: url(./assets/Circles.png);
+  /* ... other variables ... */
+
+  --content-empty: "";
+
+  /* Colors */
+  --color-gray-20: #F8F4EB;
+  --color-gray-50: #EFE6E6;
+  --color-gray-100: #DFCCCC;
+  --color-gray-500: #5E0000;
+  --color-primary-100: #FFE1E0;
+  --color-primary-300: #FFA6A3;
+  --color-primary-500: #FF6B66;
+  --color-secondary-400: #FFCD5B;
+  --color-secondary-500: #FFC132;
+
+  /* Breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
+
+  /* Content */
+  --content-empty: "";
+}
+
+@safelist bg-abstractwaves before:bg-abstractwaves bg-evolvetext before:bg-evolvetext bg-sparkles before:bg-sparkles bg-circles before:bg-circles bg-mobile-home before:bg-mobile-home bg-gradient-yellowred before:bg-gradient-yellowred;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure pseudo-elements are toggleable and rendered */
+
+
+
+
+/* 
+.custom-abstractwaves::before {
+  content: "";
+  background-image: url(./assets/AbstractWaves.png);
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid black;
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  display: block;
+} */
