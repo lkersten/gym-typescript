@@ -2,8 +2,8 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import evolvetext from "@/assets/EvolveText.png";
+import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
@@ -52,16 +52,13 @@ const Home = ({setSelectedPage}: Props) => {
                 <div className="relative before:content-empty 
                      before:absolute before:-top-20 before:-left-20 before:z-[1] before:w-32 
                      before:h-32 before:bg-cover before:bg-center md:before:w-48 md:before:h-48"
-                    //  style={{ "--tw-content": '""' } as React.CSSProperties}
+                     style={{ "--tw-content": '""' } as React.CSSProperties}
                      >
                 
-                {/* <img alt="evolve-text" src="/src/assets/EvolveText.png" /> */}
-                 <div className="w-full after:-bottom-20 before:-right-10 before:z-[-1]">
-                        <img className="w-full"
-                        alt="evolvetext-graphic"
-                        src={evolvetext}
-                />
-             </div>
+                <img alt="evolve-text" src={evolvetext} />
+                    <div className="backgroundImage:EvolveText">
+                    <img alt="home-page-text" src={HomePageText}/>
+                    </div>
                   
                     </div>
                 </div>
