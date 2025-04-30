@@ -3,6 +3,7 @@ import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import evolvetext from "@/assets/EvolveText.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
@@ -54,10 +55,13 @@ const Home = ({setSelectedPage}: Props) => {
                      style={{ "--tw-content": '""' } as React.CSSProperties}
                      >
                 
-                <img alt="evolve-text" src="/src/assets/EvolveText.png" />
-                    <div className="backgroundImage:EvolveText">
-                    <img alt="home-page-text" src={HomePageText}/>
-                    </div>
+                {/* <img alt="evolve-text" src="/src/assets/EvolveText.png" /> */}
+                 <div className="w-full after:-bottom-20 before:-right-10 before:z-[-1]">
+                        <img className="w-full"
+                        alt="evolvetext-graphic"
+                        src={evolvetext}
+                />
+             </div>
                   
                     </div>
                 </div>
